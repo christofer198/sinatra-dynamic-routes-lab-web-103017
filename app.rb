@@ -6,4 +6,9 @@ class App < Sinatra::Base
     uname = params[:name]
     reversed = uname.reverse
   end
+
+  get '/square/:number' do
+    num = params[:number]
+    square = num*num
+  end
 end
